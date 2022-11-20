@@ -14,6 +14,7 @@ const CreateProduct = () => {
     const [salePrice, setSalePrice] = useState()
     const [category, setCategory] = useState("")
     const [sku, setSku] = useState()
+    const [secondPhoto, setSecondPhoto] = useState("");
     const [description, setDescription] = useState()
     const [summary, setSummary] = useState()
     const [isStock, setIsStock] = useState(false)
@@ -48,6 +49,7 @@ const CreateProduct = () => {
                 description: description,
                 summary: summary,
                 sku: sku,
+                secondPhoto : secondPhoto,
                 categoryId: category,
                 coverPhoto: coverPhoto,
                 isStock: isStock,
@@ -129,6 +131,9 @@ const CreateProduct = () => {
                         </div>
                         <div className="col-lg-12 my-2">
                             <TextField fullWidth id="outlined-basic" onChange={(e) => setSku(e.target.value)} label="SKU" variant="outlined" />
+                        </div>
+                        <div className="col-lg-12 my-2">
+                            <TextField fullWidth id="outlined-basic" onChange={(e) => setSecondPhoto(e.target.value)} label="SecondPhoto" variant="outlined" />
                         </div>
 
                         <div className="col-lg-12 my-2">

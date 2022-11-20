@@ -40,7 +40,7 @@ const Login = () => {
       <div className="container my-5">
         <div className="row">
           <div className="col-lg-6">
-            <img width='100%' src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733__340.jpg" alt="" />
+            <img width='100%' src="https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg" alt="" />
           </div>
           <div className="col-lg-6">
             <div className="well">

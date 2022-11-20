@@ -112,6 +112,23 @@ const SideBar = () => {
     }
   };
 
+  const addFaq = () => {
+    if (userInfo.status === 200) {
+      navigate("/faq");
+    } 
+    else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Evvelce daxil olmalisiniz!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/");
+        }
+      });
+    }
+  };
+
   const addDashboard = () => {
     if (userInfo.status === 200) {
       navigate("/dashboard");
@@ -149,6 +166,9 @@ const SideBar = () => {
         </li>
         <li className="comment" onClick={() => addComment()}>
           <a>Comment</a>
+        </li>
+        <li className="faq" onClick={() => addFaq()}>
+          <a>Faq</a>
         </li>
 
         {userInfo.status !== 200 ? (

@@ -3,11 +3,14 @@ import { Route, Routes } from 'react-router-dom';
 import CreateBlog from '../components/Blog/CreateBlog';
 import UpdateBlog from '../components/Blog/UpdateBlog';
 import CreateCategory from '../components/Category/CreateCategory';
+import FaqCreate from '../components/Faq/FaqCreate';
+import FaqUpdate from '../components/Faq/FaqUpdate';
 import CreateProduct from '../components/Product/CreateProduct';
 import UpdateProduct from '../components/Product/UpdateProduct';
 import BlogScreen from '../pages/BlogScreen';
 import CategoryScreen from '../pages/CategoryScreen';
 import Dashboard from '../pages/Dashboard';
+import FaqScreen from '../pages/FaqScreen';
 import Home from '../pages/Home';
 import OrderScreen from '../pages/OrderScreen';
 import ProductScreen from '../pages/ProductScreen';
@@ -30,6 +33,9 @@ const MyRouter = () => {
         <Route path='/blog/update/:id' element={<UpdateBlog/>}/>
         <Route path='/order' element={<OrderScreen />}/>
         <Route path='/comment' element={<CommentScreen />}/>
+        <Route path='/faq' element={<FaqScreen />}/>
+        <Route path='/faq/create' element={<FaqCreate />}/>
+        <Route path='/faq/update/:id' element={<FaqUpdate/>}/>
     </Routes>
   )
 }

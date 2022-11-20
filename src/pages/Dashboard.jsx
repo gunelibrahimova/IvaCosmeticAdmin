@@ -60,6 +60,17 @@ const Dashboard = () => {
             </Link>
           </div>
         </div>
+        <div className="col-lg-3 my-2">
+          <div className="card">
+            <Link to='/faq' style={{textDecoration: "none"}}>
+              <div className="card-body">
+                <h3 className="card-title text-center my-5">
+                  Faq
+                </h3>
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

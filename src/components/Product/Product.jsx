@@ -13,6 +13,7 @@ const Product = () => {
     const [salePrice, setSalePrice] = useState(0);
     const [category, setCategory] = useState("");
     const [sku, setSku] = useState("");
+    const [secondPhoto, setSecondPhoto] = useState("");
     const [description, setDescription] = useState("");
     const [summary, setSummary] = useState("");
     const [isStock, setIsStock] = useState(false);
@@ -37,6 +38,7 @@ const Product = () => {
             description: description,
             summary: summary,
             sku: sku,
+            secondPhoto : secondPhoto,
             // categoryId: category,
             coverPhoto: coverPhoto,
             isStock: isStock,

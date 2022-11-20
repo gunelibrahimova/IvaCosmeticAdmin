@@ -2,6 +2,7 @@ import {combineReducers, createStore, applyMiddleware} from '@reduxjs/toolkit'
 import { BlogReducer } from './Reducers/BlogReducer'
 import { CategoryReducer } from './Reducers/CategoryReducer'
 import { CommentReducers } from './Reducers/CommentReducers'
+import { FaqReducer } from './Reducers/FaqReducer'
 import { OrderReducers } from './Reducers/OrderReducers'
 import { ProductReducers } from './Reducers/ProductReducers'
 import { UploadReducer } from './Reducers/UploadReducer'
@@ -17,7 +18,8 @@ const reducer = combineReducers({
     blog: BlogReducer,
     user: UserReducer,
     orders: OrderReducers,
-    comments : CommentReducers
+    comments : CommentReducers,
+    faq : FaqReducer
 })
 
 const userInfoFromLocalStorage = localStorage.getItem("userInfo")
@@ -30,7 +32,8 @@ const initialState = {
     blog : [],
     user: {userInfo: userInfoFromLocalStorage},
     orders: [],
-    comments : []
+    comments : [],
+    faq : []
 }
 
 const middleware = [thunk]
